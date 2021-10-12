@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<title>Bookmark App</title>
+	</head>
+	<body>
+		<div class="head mb-5" style="background: darkcyan; padding: 2rem">
+			<h3
+				class="text-center mb-3"
+				style="
+					font-size: 3rem;
+					font-family: Verdana, Geneva, Tahoma, sans-serif;
+					color: rgb(5, 2, 0);
+				"
+			>
+				Bookmarker
+			</h3>
+		</div>
+		<div
+			class="container form-control"
+			style="
+				background: lightcyan;
+				border: transparent;
+				border-radius: 10px;
+				width: 25%;
+			"
+		>
+			<form>
+				<div class="mb-3" style="text-align: center">
+					<label
+						for="textInput"
+						class="form-label"
+						style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+						>Website Name</label
+					>
+					<input type="text" class="form-control" id="inputWebsiteName" />
+				</div>
+
+				<div class="mb-3" style="text-align: center">
+					<label
+						for="textInput"
+						class="form-label"
+						style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+						>Website URL</label
+					>
+					<input type="text" class="form-control" id="inputWebsiteUrl" />
+				</div>
+
+				<div class="mb-3 form-check">
+					<input type="checkbox" id="check" class="form-check-input" />
+					<label class="form-check-label">Check me out</label>
+				</div>
+
+				<button
+					type="submit"
+					id="searchBtn"
+					class="btn btn-secondary"
+					style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+				>
+					Submit
+				</button>
+			</form>
+		</div>
+
+		<div
+			id="result"
+			class="container form-control mt-4"
+			style="border: transparent; border-radius: 10px; width: 25%"
+		></div>
+		<footer class="footer mt-3" style="background: lightgray">
+			<p>&copy; 2021 Bookmarker,Inc.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
